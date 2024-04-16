@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SeleniumTestSuite">
+<!--    <parameter name="browser" value="chrome"/>-->
+<!--    <parameter name="browser" value="firefox"/>-->
+	<parameter name="browser" value="${browser}"/>
+    <test name="SeleniumTest">
+        <classes>
+            <class name="testcases.SampleTestCases"/>
+        </classes>
+     </test>
+</suite>
