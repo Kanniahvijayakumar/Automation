@@ -1,2 +1,6 @@
+ApiTestCases\SampleTestCases.class
+excelRead\ReadTestCaseName.class
+execution\UIOperation.class
+excelRead\ReadExcel.class
 listener\TestNGListener.class
 testcases\SampleTestCases.class
