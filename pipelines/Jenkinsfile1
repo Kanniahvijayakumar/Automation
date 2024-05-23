@@ -1,0 +1,65 @@
+pipeline {
+    agent any
+    
+    environment {
+        BROWSER = "${params.browser}"
+        TESTNG_XML_FILE_PATH = "${params.TESTNG_XML_FILE_PATH}"
+    }
+    
+    parameters {
+        string(name: 'browser', defaultValue: 'chrome', description: 'Mention the browser to run in the parameter')
+        string(name: 'TESTNG_XML_FILE_PATH', defaultValue: 'Regression', description: 'Test Type - Regression | Smoke')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/Kanniahvijayakumar/Automation.git', branch: 'main'
+            }
+        }
+        
+        stage('API Regression') {
+            steps {
+                // Execute the tests for Regression
+                script {
+                    bat "mvn clean test -DtestngXmlFile=ApiRegression.xml"
+                }
+            }
+        }
+
+
+        stage('API Smoke') {
+            steps {
+                // Execute the tests for Regression
+                script {
+                    bat "mvn clean test -DtestngXmlFile=ApiSmoke.xml"
+                }
+            }
+        }
+
+        stage('UI Regression') {
+            steps {
+                // Execute the tests for Regression
+                script {
+                    bat "mvn clean test -DtestngXmlFile=Regression.xml"
+                }
+            }
+        }
+
+        stage('UI Smoke') {
+            steps {
+                // Execute the tests for Smoke
+                script {
+                    bat "mvn clean test -DtestngXmlFile=Smoke.xml"
+                }
+            }
+        }
+    }
+
+
+post {
+    always {
+        testNG()
+    }
+}
+}
