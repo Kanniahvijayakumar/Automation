@@ -3,7 +3,7 @@ Backend (API) testing with Jenkins CI/CD integration. The framework is built usi
 and TestNG with Java ( Maven project ).
 
 Please find the High Level Architecture diagram - HighLevelTestingArchitectureDiagram.png
-![Diagram Name](path/to/diagram.png)
+![Diagram Name](HighLevelTestingArchitectureDiagram.png)
 
 
 Please find the Jenkins Pipelines Script - pipelines folder
