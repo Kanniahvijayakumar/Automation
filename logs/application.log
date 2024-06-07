@@ -3994,3 +3994,197 @@
 2024-05-10 22:33:01.157 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
 2024-05-10 22:33:01.162 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
 2024-05-10 22:33:01.165 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-06-07 23:31:01.965 [main] INFO  execution.UIOperation - Initializing WebDriver for browser: chrome
+2024-06-07 23:31:02.059 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+2024-06-07 23:31:02.059 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2024-06-07 23:31:02.059 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2024-06-07 23:31:02.059 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2f9a01c1
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6497b078
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4213178368 bytes (maybe)
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\kanni\AppData\Local\Temp (java.io.tmpdir)
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2024-06-07 23:31:02.075 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2024-06-07 23:31:02.090 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2024-06-07 23:31:02.106 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-06-07 23:31:02.106 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-06-07 23:31:02.217 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2024-06-07 23:31:02.217 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2024-06-07 23:31:02.248 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+2024-06-07 23:31:02.248 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2024-06-07 23:31:02.248 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 32
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 32
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-06-07 23:31:02.298 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-06-07 23:31:02.313 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-06-07 23:31:02.313 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2024-06-07 23:31:02.313 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-06-07 23:31:02.326 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2024-06-07 23:31:02.326 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-06-07 23:31:02.326 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-06-07 23:31:02.792 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 2320 (auto-detected)
+2024-06-07 23:31:02.792 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2024-06-07 23:31:02.792 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2024-06-07 23:31:02.792 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2024-06-07 23:31:02.808 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2024-06-07 23:31:02.823 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 8c:f8:c5:ff:fe:6b:4f:86 (auto-detected)
+2024-06-07 23:31:02.872 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2024-06-07 23:31:02.872 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2024-06-07 23:31:02.872 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@e3bda43
+2024-06-07 23:31:02.902 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-06-07 23:31:02.902 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2024-06-07 23:31:02.902 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2024-06-07 23:31:02.902 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2024-06-07 23:31:02.902 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2024-06-07 23:31:03.625 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2024-06-07 23:31:03.714 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x1ad67190c846a27b
+2024-06-07 23:31:03.754 [main] INFO  execution.UIOperation - Chrome driver initialized
+2024-06-07 23:31:03.764 [main] INFO  execution.UIOperation - Executing test case: Login In Application
+2024-06-07 23:31:03.889 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-07 23:31:03.897 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-06-07 23:31:03.897 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-06-07 23:31:04.285 [main] INFO  excelRead.ReadTestCaseName - New Testcase -> Sample Test Case Started
+2024-06-07 23:31:04.285 [main] INFO  excelRead.ReadTestCaseName - New Testcase -> Login In Application Started
+2024-06-07 23:31:04.285 [main] DEBUG excelRead.ReadTestCaseName - Step details: GOTOURL ----  ----  ---- https://www.selenium.dev/selenium/web/web-form.html
+2024-06-07 23:31:04.285 [main] DEBUG excelRead.ReadTestCaseName - Step details: SETTEXT ---- my-text ---- name ---- Selenium
+2024-06-07 23:31:04.285 [main] DEBUG excelRead.ReadTestCaseName - Step details: CLICK ---- button ---- CSS ---- button
+2024-06-07 23:31:04.285 [main] INFO  excelRead.ReadTestCaseName - Test case details extraction complete
+2024-06-07 23:31:04.285 [main] DEBUG execution.UIOperation - Key: Keyword, Value: GOTOURL
+2024-06-07 23:31:04.285 [main] DEBUG execution.UIOperation - Key: Object, Value: 
+2024-06-07 23:31:04.285 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: 
+2024-06-07 23:31:04.285 [main] DEBUG execution.UIOperation - Key: value, Value: https://www.selenium.dev/selenium/web/web-form.html
+2024-06-07 23:31:04.285 [main] INFO  execution.UIOperation - Performing operation: GOTOURL
+2024-06-07 23:31:04.770 [main] INFO  execution.UIOperation - Operation GOTOURL performed successfully
+2024-06-07 23:31:04.770 [main] DEBUG execution.UIOperation - Key: Keyword, Value: SETTEXT
+2024-06-07 23:31:04.770 [main] DEBUG execution.UIOperation - Key: Object, Value: my-text
+2024-06-07 23:31:04.770 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: name
+2024-06-07 23:31:04.770 [main] DEBUG execution.UIOperation - Key: value, Value: Selenium
+2024-06-07 23:31:04.770 [main] INFO  execution.UIOperation - Performing operation: SETTEXT
+2024-06-07 23:31:04.770 [main] INFO  execution.UIOperation - Locating element. ObjectType: name, ObjectName: my-text
+2024-06-07 23:31:04.929 [main] INFO  execution.UIOperation - Operation SETTEXT performed successfully
+2024-06-07 23:31:04.929 [main] DEBUG execution.UIOperation - Key: Keyword, Value: CLICK
+2024-06-07 23:31:04.929 [main] DEBUG execution.UIOperation - Key: Object, Value: button
+2024-06-07 23:31:04.929 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: CSS
+2024-06-07 23:31:04.929 [main] DEBUG execution.UIOperation - Key: value, Value: button
+2024-06-07 23:31:04.929 [main] INFO  execution.UIOperation - Performing operation: CLICK
+2024-06-07 23:31:04.929 [main] INFO  execution.UIOperation - Locating element. ObjectType: CSS, ObjectName: button
+2024-06-07 23:31:05.286 [main] INFO  execution.UIOperation - Operation CLICK performed successfully
+2024-06-07 23:31:05.777 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-07 23:31:05.777 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-06-07 23:31:05.777 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-06-07 23:31:05.797 [main] INFO  org.testng.ITestListener -  ----- > Need to Implement for the Jira or Test Rail API
+2024-06-07 23:32:23.381 [main] INFO  execution.UIOperation - Initializing WebDriver for browser: chrome
+2024-06-07 23:32:23.460 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+2024-06-07 23:32:23.460 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2024-06-07 23:32:23.475 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2024-06-07 23:32:23.475 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@b968a76
+2024-06-07 23:32:23.475 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2024-06-07 23:32:23.475 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6497b078
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4213178368 bytes (maybe)
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\kanni\AppData\Local\Temp (java.io.tmpdir)
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2024-06-07 23:32:23.491 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2024-06-07 23:32:23.506 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2024-06-07 23:32:23.506 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2024-06-07 23:32:23.647 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2024-06-07 23:32:23.647 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2024-06-07 23:32:23.663 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+2024-06-07 23:32:23.663 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2024-06-07 23:32:23.663 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 32
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 32
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2024-06-07 23:32:23.741 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2024-06-07 23:32:23.757 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2024-06-07 23:32:23.757 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2024-06-07 23:32:23.757 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2024-06-07 23:32:24.258 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 19748 (auto-detected)
+2024-06-07 23:32:24.258 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2024-06-07 23:32:24.258 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2024-06-07 23:32:24.274 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2024-06-07 23:32:24.274 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2024-06-07 23:32:24.289 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 8c:f8:c5:ff:fe:6b:4f:86 (auto-detected)
+2024-06-07 23:32:24.323 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2024-06-07 23:32:24.323 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2024-06-07 23:32:24.323 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@776cc337
+2024-06-07 23:32:24.338 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2024-06-07 23:32:24.338 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2024-06-07 23:32:24.338 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2024-06-07 23:32:24.338 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2024-06-07 23:32:24.338 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2024-06-07 23:32:25.049 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2024-06-07 23:32:25.158 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x3012d9f1e89d8ac1
+2024-06-07 23:32:25.186 [main] INFO  execution.UIOperation - Chrome driver initialized
+2024-06-07 23:32:25.208 [main] INFO  execution.UIOperation - Executing test case: Login In Application
+2024-06-07 23:32:25.314 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-07 23:32:25.330 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-06-07 23:32:25.330 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-06-07 23:32:25.695 [main] INFO  excelRead.ReadTestCaseName - New Testcase -> Sample Test Case Started
+2024-06-07 23:32:25.695 [main] INFO  excelRead.ReadTestCaseName - New Testcase -> Login In Application Started
+2024-06-07 23:32:25.695 [main] DEBUG excelRead.ReadTestCaseName - Step details: GOTOURL ----  ----  ---- https://www.selenium.dev/selenium/web/web-form.html
+2024-06-07 23:32:25.711 [main] DEBUG excelRead.ReadTestCaseName - Step details: SETTEXT ---- my-text ---- name ---- Selenium
+2024-06-07 23:32:25.711 [main] DEBUG excelRead.ReadTestCaseName - Step details: CLICK ---- button ---- CSS ---- button
+2024-06-07 23:32:25.711 [main] INFO  excelRead.ReadTestCaseName - Test case details extraction complete
+2024-06-07 23:32:25.711 [main] DEBUG execution.UIOperation - Key: Keyword, Value: GOTOURL
+2024-06-07 23:32:25.711 [main] DEBUG execution.UIOperation - Key: Object, Value: 
+2024-06-07 23:32:25.711 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: 
+2024-06-07 23:32:25.711 [main] DEBUG execution.UIOperation - Key: value, Value: https://www.selenium.dev/selenium/web/web-form.html
+2024-06-07 23:32:25.711 [main] INFO  execution.UIOperation - Performing operation: GOTOURL
+2024-06-07 23:32:26.026 [main] INFO  execution.UIOperation - Operation GOTOURL performed successfully
+2024-06-07 23:32:26.026 [main] DEBUG execution.UIOperation - Key: Keyword, Value: SETTEXT
+2024-06-07 23:32:26.027 [main] DEBUG execution.UIOperation - Key: Object, Value: my-text
+2024-06-07 23:32:26.027 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: name
+2024-06-07 23:32:26.027 [main] DEBUG execution.UIOperation - Key: value, Value: Selenium
+2024-06-07 23:32:26.027 [main] INFO  execution.UIOperation - Performing operation: SETTEXT
+2024-06-07 23:32:26.027 [main] INFO  execution.UIOperation - Locating element. ObjectType: name, ObjectName: my-text
+2024-06-07 23:32:26.114 [main] INFO  execution.UIOperation - Operation SETTEXT performed successfully
+2024-06-07 23:32:26.114 [main] DEBUG execution.UIOperation - Key: Keyword, Value: CLICK
+2024-06-07 23:32:26.114 [main] DEBUG execution.UIOperation - Key: Object, Value: button
+2024-06-07 23:32:26.114 [main] DEBUG execution.UIOperation - Key: ObjectType, Value: CSS
+2024-06-07 23:32:26.114 [main] DEBUG execution.UIOperation - Key: value, Value: button
+2024-06-07 23:32:26.114 [main] INFO  execution.UIOperation - Performing operation: CLICK
+2024-06-07 23:32:26.114 [main] INFO  execution.UIOperation - Locating element. ObjectType: CSS, ObjectName: button
+2024-06-07 23:32:26.239 [main] INFO  execution.UIOperation - Operation CLICK performed successfully
+2024-06-07 23:32:26.639 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-06-07 23:32:26.639 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-06-07 23:32:26.639 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2024-06-07 23:32:26.670 [main] INFO  org.testng.ITestListener -  ----- > Need to Implement for the Jira or Test Rail API
