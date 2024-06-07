@@ -144,7 +144,7 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;SeleniumTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listener.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -194,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifySetup')
 data.setCell(0, 2, 'testcases.SampleTestCases')
-data.setCell(0, 3, 1900);
+data.setCell(0, 3, 911);
 window.suiteTableData['SeleniumTestSuite']= { tableData: data, tableDiv: 'times-div-SeleniumTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 911 ms</span>
               <div id="times-div-SeleniumTestSuite">
               </div> <!-- times-div-SeleniumTestSuite -->
             </div> <!-- times-div -->
@@ -227,12 +227,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SampleTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">browserSetup(firefox)</span>
+                <span class="method-name">browserSetup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifySetup</span>
-                <span class="method-start">4400 ms</span>
+                <span class="method-start">2029 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
