@@ -51,6 +51,6 @@ public class SampleTestCases{
 
     @Test
     public void verifySetup() throws Exception {
-    	Execution.Execution("Login In Application","KeywordFramework");
+    	Execution.Execution("Login In Application");
     }
     }  
