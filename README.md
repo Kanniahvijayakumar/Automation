@@ -3,7 +3,7 @@ You can find the skeleton automation framework for both Frontend (UI) and Backen
 Please find the Jenkins Pipelines Script - pipelines folder
 
 Please find the High Level Architecture diagram :
-![Diagram Name](HighLevelTestingArchitectureDiagram.png)
+![Diagram Name](HighLevelTestingArchitectureDiagram.drawio.png)
 
 
 
