@@ -14,4 +14,9 @@ Please find the FIle Structure diagram :
 ![Diagram Name](FileStructure.drawio.png)
 
 
+Note :
+
+Please run the code using the following command in CMD - mvn test -Dbrowser=chrome -DtestngXmlFile=TestNG.xml
+
+
 
