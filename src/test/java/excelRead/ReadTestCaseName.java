@@ -33,7 +33,7 @@ public class ReadTestCaseName {
         
         String projectDir = System.getProperty("user.dir");
         // Read the specified Excel sheet
-        Sheet guru99Sheet = file.readExcel(projectDir + "\\src\\main\\resources\\ExcelData\\", "TestCase.xlsx", "KeywordFramework");
+        Sheet guru99Sheet = file.readExcel(projectDir + "\\src\\test\\resources\\ExcelData\\", "TestCase.xlsx", "KeywordFramework");
 
         Map<String, Map<String, String>> testCaseMap = new LinkedHashMap<>();
 
@@ -83,7 +83,7 @@ public class ReadTestCaseName {
     public String getJiraId(String testCaseName, String sheetName) throws IOException {
         ReadExcel file = new ReadExcel();
         String projectDir = System.getProperty("user.dir");
-        Sheet sheet = file.readExcel(projectDir + "\\src\\main\\resources\\ExcelData\\", "TestCase.xlsx", sheetName);
+        Sheet sheet = file.readExcel(projectDir + "\\src\\test\\resources\\ExcelData\\", "TestCase.xlsx", sheetName);
 
         int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
         String testCaseId = "";

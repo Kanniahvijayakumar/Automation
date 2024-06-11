@@ -1,0 +1,49 @@
+testCases:
+  - name: Get_Users
+    testRailID: Qa-111
+    method: GET
+    endpoint: https://gorest.co.in/public/v2/users
+
+  - name: Create_User
+    method: POST
+    testRailID: Qa-123
+    endpoint: https://gorest.co.in/public/v2/users
+    expectedResult:
+       message: has already been taken
+    body:
+      name: Vijay_123
+      gender: male
+      email: daa1@gmail.com
+      status: active
+
+  - name: Create_User2
+    method: POST
+    testRailID: Qa-124
+    endpoint: https://gorest.co.in/public/v2/users
+    body:
+      name: Vijay
+      gender: male
+      email: vijay123@gmail.com
+      status: active
+
+  - name: Update_User
+    method: PUT
+    testRailID: Qa-125
+    endpoint: https://gorest.co.in/public/v2/users
+    body:
+      name: Vijay123
+      gender: male
+      email: vijay@gmail.com
+      status: active
+
+  - name: Delete_User
+    method: DELETE
+    testRailID: Qa-126
+    endpoint: https://gorest.co.in/public/v2/users
+    expectedResult:
+       message : Resource not found
+    body:
+      name: Vijay
+      gender: male
+      email: daa12332w2wi@gmail.com
+      status: active

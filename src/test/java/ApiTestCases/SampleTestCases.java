@@ -1,79 +1,125 @@
-package ApiTestCases;
+package apiTestCases;
 
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
-import org.testng.annotations.BeforeClass;
+import org.json.JSONArray;
 import org.testng.annotations.Test;
-
+import excelRead.ApiReadJsonResponse;
 import execution.RestAssuredCRUDTest;
-
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-
 import java.io.FileNotFoundException;
 
-import java.util.List;
-import java.util.Map;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class SampleTestCases {
-	
-	private static final String BASE_URL = "https://gorest.co.in/public/v2";
-    private static final String ACCESS_TOKEN = "8416c70904c511ecb4711f84992abe2fe89ccb4a84b511b47d773eb9464cae61";
+
+    // Create an instance of RestAssuredCRUDTest to be used in all test methods
+    private final RestAssuredCRUDTest crudTest = new RestAssuredCRUDTest();
     
-@Test
-        public void testGetRequest() {
-            String testCaseName = "Get Users"; // Change this to the desired test case name
-            RestAssuredCRUDTest crudTest = new RestAssuredCRUDTest();
-            try {
-            	Response response = crudTest.executeTestCases(testCaseName);
-            	
-            	System.out.print("QQQQQQQQQQQQQ");
-            	
-            	System.out.print(response.then().log().body());
-            	
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-        }
+    private static final Logger logger = LogManager.getLogger(SampleTestCases.class);
+    
+    JSONArray jsonArray;
+    
+    String jsonData;
 
-@Test
-public void testPOSTRequest() {
-    String testCaseName = "Create User"; // Change this to the desired test case name
-    RestAssuredCRUDTest crudTest = new RestAssuredCRUDTest();
-    try {
-    	Response response = crudTest.executeTestCases(testCaseName);
-    	
-    	System.out.print("QQQQQQQQQQQQQ");
-    	
-    	System.out.print(response.then().log().body());
-    	
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
+    /**
+     * Test case for GET request to retrieve users.
+     * @throws FileNotFoundException 
+     */
+    @Test
+    public void testGetRequest() throws FileNotFoundException {
+        String testCaseName = "Get_Users"; // Name of the test case
+
+
+            // Execute the test case and get the response
+            Response response = crudTest.executeTestCases(testCaseName, null);
+
+            // Log the response body
+            logger.info("Response Body: {}", response.then().log().body());
+
     }
-}
- 
-@Test
-public void testDeleteRequest() throws FileNotFoundException {
-	
-	String testCaseName = "Delete User"; // Change this to the desired test case name
-	RestAssuredCRUDTest crudTest = new RestAssuredCRUDTest();
-	
-    try {
-    	Response response = crudTest.executeTestCases(testCaseName);
-    	
-    	System.out.print("QQQQQQQQQQQQQ");
-    	
-    	System.out.print(response.then().log().body());
-    	
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
+
+    /**
+     * Test case for POST request to create a user.
+     * @throws FileNotFoundException 
+     */
+    @Test
+    public void testPOSTRequest() throws FileNotFoundException {
+        String testCaseName = "Create_User"; // Name of the test case
+
+
+            // Execute the test case and get the response
+            Response response = crudTest.executeTestCases(testCaseName, null);
+
+            // Log the response body
+            logger.info("Response Body: {}", response.then().log().body());
+
     }
-	
+    
+    @Test
+    public void testUpdateUser() throws FileNotFoundException {
+        String testCaseName = "Update_User"; // Name of the test case
 
-}
 
+            // Execute the test case and get the response
+            Response response = crudTest.executeTestCases("Get_Users", null);
 
+            // Log the response body
+            logger.info("Response Body: {}", response.then().log().body());
+            
+            jsonData = response.getBody().asString(); 
+            
+            // Convert JSON string to JSONArray
+            jsonArray = new JSONArray(jsonData);
+            
+            String emailValue = crudTest.getTestCaseValue(testCaseName, "email");
+            
+            // Execute the test case and get the response
+            String id = String.valueOf(ApiReadJsonResponse.findId(jsonArray, "email", emailValue));
+            
+            logger.info("User ID: {}", id);
+            
+            response = crudTest.executeTestCases(testCaseName, id);
+            
+            logger.info("Response Body: {}", response.then().log().body());
+            
+    }
+    
+    
+    /**
+     * Test case for DELETE request to delete a user.
+     * @throws FileNotFoundException 
+     */
+    @Test
+    public void testDeleteRequest() throws FileNotFoundException {
+        String testCaseName = "Delete_User"; // Name of the test case
+
+            // Execute the test case and get the response
+            Response response = crudTest.executeTestCases(testCaseName, null);
+
+            // Log the response body
+            logger.info("Response Body: {}", response.then().log().body());
+            
+            // Execute the test case and get the response
+            response = crudTest.executeTestCases("Get_Users", null);
+
+            // Log the response body
+            logger.info("Response Body: {}", response.then().log().body());
+            
+            jsonData = response.getBody().asString(); 
+            
+            // Convert JSON string to JSONArray
+            jsonArray = new JSONArray(jsonData);
+            
+            String emailValue = crudTest.getTestCaseValue(testCaseName, "email");
+            
+            // Execute the test case and get the response
+            String id = String.valueOf(ApiReadJsonResponse.findId(jsonArray, "email", emailValue));
+            
+            logger.info("User ID: {}", id);
+            
+            response = crudTest.executeTestCases(testCaseName, id);
+            
+            logger.info("Response Body: {}", response.then().log().body());
+            
+    }
 }

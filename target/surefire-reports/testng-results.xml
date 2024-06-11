@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-07T23:32:23 BST" name="SeleniumTestSuite" finished-at="2024-06-07T23:32:26 BST" duration-ms="3320">
+  <suite started-at="2024-06-10T23:49:17 BST" name="SeleniumTestSuite" finished-at="2024-06-10T23:49:22 BST" duration-ms="5351">
     <groups>
     </groups>
-    <test started-at="2024-06-07T23:32:23 BST" name="SeleniumTest" finished-at="2024-06-07T23:32:26 BST" duration-ms="3320">
-      <class name="testcases.SampleTestCases">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:testcases.SampleTestCases@53fd0d10]" started-at="2024-06-07T23:32:23 BST" name="browserSetup" finished-at="2024-06-07T23:32:25 BST" duration-ms="1820" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-06-10T23:49:17 BST" name="SeleniumTest" finished-at="2024-06-10T23:49:22 BST" duration-ms="5351">
+      <class name="apiTestCases.SampleTestCases">
+        <test-method signature="testDeleteRequest()[pri:0, instance:apiTestCases.SampleTestCases@53251a66]" started-at="2024-06-10T23:49:17 BST" name="testDeleteRequest" finished-at="2024-06-10T23:49:20 BST" duration-ms="2633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="verifySetup()[pri:0, instance:testcases.SampleTestCases@53fd0d10]" started-at="2024-06-07T23:32:25 BST" name="verifySetup" finished-at="2024-06-07T23:32:26 BST" duration-ms="1037" status="PASS">
+        </test-method> <!-- testDeleteRequest -->
+        <test-method signature="testGetRequest()[pri:0, instance:apiTestCases.SampleTestCases@53251a66]" started-at="2024-06-10T23:49:20 BST" name="testGetRequest" finished-at="2024-06-10T23:49:21 BST" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySetup -->
-      </class> <!-- testcases.SampleTestCases -->
+        </test-method> <!-- testGetRequest -->
+        <test-method signature="testPOSTRequest()[pri:0, instance:apiTestCases.SampleTestCases@53251a66]" started-at="2024-06-10T23:49:21 BST" name="testPOSTRequest" finished-at="2024-06-10T23:49:22 BST" duration-ms="980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPOSTRequest -->
+      </class> <!-- apiTestCases.SampleTestCases -->
     </test> <!-- SeleniumTest -->
   </suite> <!-- SeleniumTestSuite -->
 </testng-results>

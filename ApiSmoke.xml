@@ -10,7 +10,7 @@
 	<parameter name="browser" value="${browser}"/>
     <test name="SeleniumTest">
         <classes>
-            <class name="ApiTestCases.SampleTestCases"/>
+            <class name="apiTestCases.SampleTestCases"/>
         </classes>
      </test>
 </suite>

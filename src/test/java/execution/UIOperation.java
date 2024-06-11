@@ -37,13 +37,13 @@ public class UIOperation{
 	            if (browser.equalsIgnoreCase("chrome")) {
 	                ChromeOptions chromeOptions = new ChromeOptions();
 	                chromeOptions.addArguments("--remote-allow-origins=*");
-	                System.setProperty("webdriver.chrome.driver", projectDir + "/src/main/resources/Drivers/chromedriver.exe");
+	                System.setProperty("webdriver.chrome.driver", projectDir + "/src/test/resources/Drivers/chromedriver.exe");
 //	                System.setProperty("webdriver.chrome.driver", "C:\\Users\\kanni\\eclipse-workspace\\sitatesting\\src\\test\\resources\\Drivers\\chromedriver.exe");
 	                this.driver  = new ChromeDriver(chromeOptions);
 	                logger.info("Chrome driver initialized");
 	                
 	            } else if (browser.equalsIgnoreCase("firefox")) {
-	                System.setProperty("webdriver.gecko.driver", projectDir + "/src/main/resources/Drivers/geckodriver.exe");
+	                System.setProperty("webdriver.gecko.driver", projectDir + "/src/test/resources/Drivers/geckodriver.exe");
 	                FirefoxOptions options = new FirefoxOptions();
 	                options.setCapability("marionette", true);
 	                this.driver = new FirefoxDriver(options);
@@ -92,16 +92,6 @@ public class UIOperation{
 
 	                if (key.equalsIgnoreCase("value")) {
 	                    Value = value;
-
-	                    if (value.equalsIgnoreCase("Date_Ahead2")) {
-	                        // Calculate the date 2 days ahead from the current date
-	                        LocalDate currentDate = LocalDate.now();
-	                        LocalDate checkInDate = currentDate.plusDays(2);
-	                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // Adjust the format as needed
-	                        String formattedDate = checkInDate.format(formatter);
-
-	                        Value = formattedDate;
-	                    }
 	                }
 	            }
 
