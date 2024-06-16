@@ -5,10 +5,16 @@ import org.json.JSONArray;
 import org.testng.annotations.Test;
 import excelRead.ApiReadJsonResponse;
 import execution.RestAssuredCRUDTest;
+
+import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
+
 import java.io.FileNotFoundException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.equalTo;
+
 
 public class SampleTestCases {
 
@@ -25,7 +31,7 @@ public class SampleTestCases {
      * Test case for GET request to retrieve users.
      * @throws FileNotFoundException 
      */
-    @Test
+    @Test(priority = 1)
     public void testGetRequest() throws FileNotFoundException {
         String testCaseName = "Get_Users"; // Name of the test case
 
@@ -34,7 +40,7 @@ public class SampleTestCases {
             Response response = crudTest.executeTestCases(testCaseName, null);
 
             // Log the response body
-            logger.info("Response Body: {}", response.then().log().body());
+            logger.info("Response Body: {}", response.then().log().body().log());
 
     }
 
@@ -42,7 +48,7 @@ public class SampleTestCases {
      * Test case for POST request to create a user.
      * @throws FileNotFoundException 
      */
-    @Test
+    @Test(priority = 2)
     public void testPOSTRequest() throws FileNotFoundException {
         String testCaseName = "Create_User"; // Name of the test case
 
@@ -51,11 +57,11 @@ public class SampleTestCases {
             Response response = crudTest.executeTestCases(testCaseName, null);
 
             // Log the response body
-            logger.info("Response Body: {}", response.then().log().body());
+            logger.info("Response Body: {}", response.then().log().body().log());
 
     }
     
-    @Test
+    @Test(priority = 3)
     public void testUpdateUser() throws FileNotFoundException {
         String testCaseName = "Update_User"; // Name of the test case
 
@@ -66,17 +72,8 @@ public class SampleTestCases {
             // Log the response body
             logger.info("Response Body: {}", response.then().log().body());
             
-            jsonData = response.getBody().asString(); 
-            
-            // Convert JSON string to JSONArray
-            jsonArray = new JSONArray(jsonData);
-            
-            String emailValue = crudTest.getTestCaseValue(testCaseName, "email");
-            
-            // Execute the test case and get the response
-            String id = String.valueOf(ApiReadJsonResponse.findId(jsonArray, "email", emailValue));
-            
-            logger.info("User ID: {}", id);
+            // Get the id of the email
+            String id = String.valueOf( response.jsonPath().getInt("find { it.email == 'vijay123@gmail.com' }.id"));
             
             response = crudTest.executeTestCases(testCaseName, id);
             
@@ -89,33 +86,18 @@ public class SampleTestCases {
      * Test case for DELETE request to delete a user.
      * @throws FileNotFoundException 
      */
-    @Test
+    @Test(priority = 4)
     public void testDeleteRequest() throws FileNotFoundException {
         String testCaseName = "Delete_User"; // Name of the test case
-
-            // Execute the test case and get the response
-            Response response = crudTest.executeTestCases(testCaseName, null);
-
-            // Log the response body
-            logger.info("Response Body: {}", response.then().log().body());
             
             // Execute the test case and get the response
-            response = crudTest.executeTestCases("Get_Users", null);
+        	Response response = crudTest.executeTestCases("Get_Users", null);
 
             // Log the response body
             logger.info("Response Body: {}", response.then().log().body());
             
-            jsonData = response.getBody().asString(); 
-            
-            // Convert JSON string to JSONArray
-            jsonArray = new JSONArray(jsonData);
-            
-            String emailValue = crudTest.getTestCaseValue(testCaseName, "email");
-            
-            // Execute the test case and get the response
-            String id = String.valueOf(ApiReadJsonResponse.findId(jsonArray, "email", emailValue));
-            
-            logger.info("User ID: {}", id);
+            // Get the id of the email
+            String id = String.valueOf( response.jsonPath().getInt("find { it.email == 'vijay123@gmail.com' }.id"));
             
             response = crudTest.executeTestCases(testCaseName, id);
             

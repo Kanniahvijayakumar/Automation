@@ -6,8 +6,6 @@
       <class name="apiTestCases.SampleTestCases">
         <methods>
           <include name="testDeleteRequest"/>
-          <include name="testPOSTRequest"/>
-          <include name="testGetRequest"/>
         </methods>
       </class> <!-- apiTestCases.SampleTestCases -->
     </classes>

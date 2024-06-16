@@ -10,6 +10,8 @@ import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Map;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -111,6 +113,9 @@ public class RestAssuredCRUDTest {
         // Create a request specification
         RequestSpecification request = RestAssured.given();
         
+        // Add Authorization header with a token
+        request.header("Authorization", "Bearer " + accessToken);
+        
         
         try {
         // Set path parameters if present
@@ -127,8 +132,7 @@ public class RestAssuredCRUDTest {
             request.body(testCase.get("body"));
             request.header("Content-Type", "application/json");
 
-            // Add Authorization header with a token
-            request.header("Authorization", "Bearer " + accessToken);
+
         }
 
         // Execute the HTTP request based on the method
@@ -149,6 +153,9 @@ public class RestAssuredCRUDTest {
             default:
                 throw new IllegalArgumentException("Unsupported HTTP method: " + method);
         }
+        
+        // Validate the response based on the expected results
+        validateResponse(testCase, response);
 
         // Return the response
         return response;
@@ -163,4 +170,25 @@ public class RestAssuredCRUDTest {
             throw new RuntimeException("Unexpected error during API execution", e);
         }
     }
+    
+    private void validateResponse(Map<String, Object> testCase, Response response) {
+        if (testCase.containsKey("expectedResult")) {
+            @SuppressWarnings("unchecked")
+            Map<String, Object> expectedResult = (Map<String, Object>) testCase.get("expectedResult");
+
+            // Validate status code
+            if (expectedResult.containsKey("statusCode")) {
+                int expectedStatusCode = (int) expectedResult.get("statusCode");
+                response.then().statusCode(expectedStatusCode);
+            }
+
+            // Validate response body fields
+            for (Map.Entry<String, Object> entry : expectedResult.entrySet()) {
+                if (!entry.getKey().equals("statusCode")) { // Skip the status code
+                    response.then().body(entry.getKey(), equalTo(entry.getValue()));
+                }
+            }
+        }
+    }
+
 }

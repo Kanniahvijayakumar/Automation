@@ -3,37 +3,33 @@ testCases:
     testRailID: Qa-111
     method: GET
     endpoint: https://gorest.co.in/public/v2/users
+    expectedResult:
+       statusCode: 200
 
   - name: Create_User
     method: POST
     testRailID: Qa-123
     endpoint: https://gorest.co.in/public/v2/users
     expectedResult:
-       message: has already been taken
-    body:
-      name: Vijay_123
-      gender: male
-      email: daa1@gmail.com
-      status: active
-
-  - name: Create_User2
-    method: POST
-    testRailID: Qa-124
-    endpoint: https://gorest.co.in/public/v2/users
+       statusCode: 201
+       email: vijay123@gmail.com
     body:
       name: Vijay
       gender: male
       email: vijay123@gmail.com
-      status: active
+      status: active    
 
   - name: Update_User
     method: PUT
     testRailID: Qa-125
     endpoint: https://gorest.co.in/public/v2/users
+    expectedResult:
+       statusCode: 200
+       name: Vijay123
     body:
       name: Vijay123
       gender: male
-      email: vijay@gmail.com
+      email: vijay123@gmail.com
       status: active
 
   - name: Delete_User
@@ -41,9 +37,9 @@ testCases:
     testRailID: Qa-126
     endpoint: https://gorest.co.in/public/v2/users
     expectedResult:
-       message : Resource not found
+       statusCode : 204
     body:
-      name: Vijay
+      name: Vijay123
       gender: male
-      email: daa12332w2wi@gmail.com
+      email: vijay123@gmail.com
       status: active
